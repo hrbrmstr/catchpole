@@ -9,22 +9,39 @@ by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keyb
 [![Linux build
 Status](https://travis-ci.org/hrbrmstr/catchpole.svg?branch=master)](https://travis-ci.org/hrbrmstr/catchpole)  
 ![Minimal R
-Version](https://img.shields.io/badge/R%3E%3D-3.2.0-blue.svg)
+Version](https://img.shields.io/badge/R%3E%3D-3.4.0-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 # catchpole
 
-catchpole title goes here otherwise CRAN checks fail
+2020 Democrat POTUS Delegate Map Tracker
 
 ## Description
 
-A good description goes here otherwise CRAN checks fail.
+Tools to build a 2020 (D) delegate cartogram
+
+## CREDIT
+
+The hard work was done by WSJ’s Brian McGill
+(\[@brian\_mcgill\](<https://twitter.com/brian_mcgill/>)) who **manually
+crafted** the base cartogram over **days** then translated that into the
+beautiful and illuminating creation that is the WSJ online delegate
+tracker:
+<https://www.wsj.com/graphics/elections/2020/track-the-delegate-count/>.
+
+Brians’s tweetnouncement:
+<https://twitter.com/brian_mcgill/status/1222556373864648704?ref_src=twsrc%5Etfw>
 
 ## What’s Inside The Tin
 
 The following functions are implemented:
 
-  - `gg_catchpole`: Plot a U.S. Democratic Delegates Cargogram (2020)
+  - `delegates_map`: Retrieves the delegates basemap
+  - `delegates_pal`: WSJ palette for the candidates likely getting
+    delegates
+  - `expand_candidates`: Expand the state totals per delegate into an
+    indexed data frame
+  - `gg_catchpole`: Plot a U.S. Democratic Delegates Cartogram (2020)
   - `read_delegates`: Retrieves current U.S. State delegate assignments
     for 2020 from the WSJ
 
@@ -38,6 +55,8 @@ remotes::install_git("https://git.sr.ht/~hrbrmstr/catchpole")
 remotes::install_gitlab("hrbrmstr/catchpole")
 # or
 remotes::install_bitbucket("hrbrmstr/catchpole")
+# or
+remotes::install_github("hrbrmstr/catchpole")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the
@@ -50,7 +69,7 @@ library(catchpole)
 
 # current version
 packageVersion("catchpole")
-## [1] '0.1.0'
+## [1] '0.1.1'
 ```
 
 ``` r
@@ -70,8 +89,8 @@ gg_catchpole() +
 
 | Lang | \# Files |  (%) | LoC |  (%) | Blank lines |  (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | ---: | ----------: | ---: | -------: | ---: |
-| R    |        5 | 0.83 |  72 | 0.83 |          27 | 0.61 |       19 | 0.39 |
-| Rmd  |        1 | 0.17 |  15 | 0.17 |          17 | 0.39 |       30 | 0.61 |
+| R    |        8 | 0.89 |  78 | 0.84 |          28 | 0.58 |       44 | 0.57 |
+| Rmd  |        1 | 0.11 |  15 | 0.16 |          20 | 0.42 |       33 | 0.43 |
 
 ## Code of Conduct
 

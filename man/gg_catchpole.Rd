@@ -2,7 +2,7 @@
 % Please edit documentation in R/gg-catchpole.R
 \name{gg_catchpole}
 \alias{gg_catchpole}
-\title{Plot a U.S. Democratic Delegates Cargogram (2020)}
+\title{Plot a U.S. Democratic Delegates Cartogram (2020)}
 \usage{
 gg_catchpole(delegates = read_delegates())
 }
@@ -12,5 +12,5 @@ gg_catchpole(delegates = read_delegates())
 current data as long as the WSJ keeps it alive.}
 }
 \description{
-Plot a U.S. Democratic Delegates Cargogram (2020)
+Plot a U.S. Democratic Delegates Cartogram (2020)
 }

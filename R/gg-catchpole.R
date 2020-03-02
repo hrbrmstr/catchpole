@@ -1,4 +1,4 @@
-#' Plot a U.S. Democratic Delegates Cargogram (2020)
+#' Plot a U.S. Democratic Delegates Cartogram (2020)
 #'
 #' @param delegates a data frame with `state`, `candidate`, and
 #'        `delegates` count or use the default which gets the
@@ -18,7 +18,7 @@ gg_catchpole <- function(delegates = read_delegates()) {
     ) +
     scale_fill_manual(
       name = NULL, values = delegates_pal, na.value = "gray20",
-      limits = intersect(unique(delegates$candidate), names(dcols))
+      limits = intersect(unique(delegates$candidate), names(delegates_pal))
     ) +
     guides(
       fill = guide_legend(
