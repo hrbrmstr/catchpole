@@ -12,13 +12,17 @@ Description: A good description goes here otherwise CRAN checks fail.
 URL: https://git.rud.is/hrbrmstr/catchpole
 BugReports: https://git.rud.is/hrbrmstr/catchpole/issues
 Encoding: UTF-8
-License: AGPL
+License: MIT + file LICENSE
 Suggests: 
     covr, tinytest
 Depends: 
     R (>= 3.2.0)
 Imports: 
-    httr,
-    jsonlite
+    sf,
+    dplyr,
+    tidyr,
+    jsonlite,
+    ggplot2,
+    hrbrthemes
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2

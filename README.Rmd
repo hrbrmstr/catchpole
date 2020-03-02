@@ -39,6 +39,17 @@ packageVersion("catchpole")
 
 ```
 
+```{r u-1, fig.width=1300/96, fig.height=700/96}
+library(sf)
+library(catchpole) # hrbrmstr/catchpole
+library(hrbrthemes)
+library(tidyverse)
+
+gg_catchpole() +
+  theme_ft_rc(grid="") +
+  theme(legend.position = "bottom")
+```
+
 ## catchpole Metrics
 
 ```{r cloc, echo=FALSE}

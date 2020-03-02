@@ -19,3 +19,5 @@
 ^CRAN-RELEASE$
 ^appveyor\.yml$
 ^tools$
+^data-raw$
+^LICENSE\.md$
