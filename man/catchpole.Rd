@@ -4,10 +4,18 @@
 \name{catchpole}
 \alias{catchpole}
 \alias{catchpole-package}
-\title{...}
+\title{2020 Democrat POTUS Delegate Map Tracker}
 \description{
-A good description goes here otherwise CRAN checks fail.
+Tools to build a 2020 (D) delegate cartogram
 }
+\section{Credit}{
+
+
+The hard work was done by WSJ's Brian McGill (\href{https://twitter.com/brian_mcgill/}{@brian_mcgill}) who \strong{manually crafted} the base cartogram over \strong{days} then translated that into the beautiful and illuminating creation that is the WSJ online delegate tracker: \url{https://www.wsj.com/graphics/elections/2020/track-the-delegate-count/}.
+
+Brians's tweetnouncement: \url{https://twitter.com/brian_mcgill/status/1222556373864648704?ref_src=twsrc\%5Etfw}
+}
+
 \seealso{
 Useful links:
 \itemize{
@@ -18,5 +26,7 @@ Useful links:
 }
 \author{
 Bob Rudis (bob@rud.is)
+
+Brian McGill
 }
 \keyword{internal}
